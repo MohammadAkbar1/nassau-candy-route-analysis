@@ -100,20 +100,15 @@ with tab1:
         labels={'Avg_Lead_Time':'Lead Time (days)'}
     )
     fig1.update_layout(
-        height=520,
-        paper_bgcolor='rgba(0,0,0,0)',
-        geo=dict(
-            bgcolor='rgba(0,0,0,0)',
-            landcolor='rgba(30,50,80,0.4)',
-            subunitcolor='rgba(255,255,255,0.2)',
-            showlakes=False
-        ),
-        coloraxis_colorbar=dict(
-            title='Lead Time<br>(days)',
-            tickfont=dict(color='white'),
-            titlefont=dict(color='white')
-        )
+    height=520,
+    paper_bgcolor='rgba(0,0,0,0)',
+    geo=dict(
+        showlakes=False,
+        showland=True,
+        landcolor='lightgray',
+        showframe=False
     )
+)
     st.plotly_chart(fig1, use_container_width=True)
 
 with tab2:

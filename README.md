@@ -1,4 +1,4 @@
-# nassau-candy-route-analysis
+# logistics-delay-analysis
 Interactive sales route analysis dashboard for Nassau Candy Distributors built with Python, Streamlit, and Plotly.
 <br>
 Author - Mohammad Akbar
