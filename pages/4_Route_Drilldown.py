@@ -126,11 +126,13 @@ with tab1:
             xaxis=dict(showgrid=False, title='Shipments'),
             yaxis=dict(showgrid=False, title='Avg Lead Time (Days)'),
             coloraxis_colorbar=dict(
-                title='Delay %',
-                tickfont=dict(color='white'),
-                titlefont=dict(color='white')
-            )
+            title=dict(
+                text='Delay %',
+                font=dict(color='white')
+            ),
+            tickfont=dict(color='white')
         )
+            )
         st.plotly_chart(fig2, use_container_width=True)
 
     st.markdown("---")
